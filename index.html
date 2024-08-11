@@ -83,7 +83,10 @@ const TimeManagementPlanner = () => {
           value={newTask.start}
           onChange={(e) => setNewTask({ ...newTask, start: e.target.value })}
         />
-        <button onClick={handleAddTask} className="bg-blue-500 text-white p-2 m-1 rounded">
+        <button 
+          onClick={handleAddTask} 
+          className="bg-blue-500 text-white p-2 m-1 rounded"
+        >
           Add Task
         </button>
       </div>
@@ -96,7 +99,10 @@ const TimeManagementPlanner = () => {
                 <span>
                   {task.name} ({task.duration} minutes) - Start: {task.start}, End: {task.end}
                 </span>
-                <button onClick={() => handleRemoveTask(index)} className="bg-red-500 text-white p-1 text-sm rounded">
+                <button 
+                  onClick={() => handleRemoveTask(index)} 
+                  className="bg-red-500 text-white p-1 text-sm rounded"
+                >
                   Remove
                 </button>
               </li>
